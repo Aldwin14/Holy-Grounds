@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 	<title>Holy Grounds</title>
-	 <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+	 <link rel="icon" type="image/x-icon" href="src/hg.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -37,50 +37,49 @@
                 </div>
             </div>
         </nav>
-		<div class="container">
-		<h1 class="text-center">Registration Form</h1>
-		<form>
-			<div class="form-group">
-				<label for="first-name">First Name:</label>
-				<input type="text" class="form-control" id="first-name" placeholder="Enter First Name" required>
-			</div>
-			<div class="form-group">
-				<label for="last-name">Last Name:</label>
-				<input type="text" class="form-control" id="last-name" placeholder="Enter Last Name" required>
-			</div>
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="email" placeholder="Enter Email">
-			</div>
-			<div class="form-group">
-				<label for="password">Password:</label>
-				<input type="password" class="form-control" id="password" placeholder="Enter Password">
-			</div>
-			<div class="form-group">
-				<label for="birthdate">Birthdate:</label>
-				<input type="date" class="form-control" id="birthdate" required>
-			</div>
-			<div class="form-group">
-				<label for="gender">Gender:</label>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-					<label class="form-check-label" for="male">Male</label>
-				</div>
-				<div class="form-check">
-					<input class="form-check-input" type="radio" name="gender" id="female" value="female">
-					<label class="form-check-label" for="female">Female</label>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="country">Country:</label>
-				<select class="form-control" id="country">
-					<option value="USA">Philippines</option>
-					<option value="Canada">Korea</option>
-					<option value="Mexico">Japan</option>
-					<option value="Mexico">China</option>
-					<option value="Mexico">Indonesia</option>
-				</select>
-			</div>
+		        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
 			<div class="form-group form-check">
 				<input type="checkbox" class="form-check-input" id="terms" required>
 				<label class="form-check-label" for="terms">I accept the terms and conditions</label>
